@@ -1,0 +1,35 @@
+<ion-view view-title="Mesagems" ng-controller="emailsCtrl">
+
+	<ion-nav-buttons side="left">
+	    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+	  </ion-nav-buttons>
+
+	  <ion-nav-buttons side="right">
+	    <button class="button button-icon icon ion-ios-minus-outline"
+          ng-click="data.showDelete = !data.showDelete">
+         </button>
+	  </ion-nav-buttons>
+	  
+  <ion-content>
+      <ion-list show-delete="data.showDelete">
+        
+        <ion-item ng-repeat="email in emails"
+                  class="item-icon-left item-remove-animate">
+          <i class="icon ion-ios-email-outline"></i>
+          <h2>{{email.from}}</h2>
+          <p>
+            <span class="email-text">
+              {{email.subject}}
+            </span>
+            <span class="item-note email-text">
+              {{email.date | date:'EEE M/d/yyyy h:mm a'}}
+            </span>         
+          </p>
+          
+          <ion-delete-button class="ion-minus-circled" 
+                             ng-click="onItemDelete(email)">
+          </ion-delete-button>          
+        </ion-item>
+      </ion-list>
+    </ion-content>
+</ion-view>

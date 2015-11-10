@@ -1,0 +1,71 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        
+
+        <!--<ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>-->
+        <ion-item menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/olimpias">
+          Olimpiadas
+        </ion-item>
+        <ion-item menu-close href="#/app/puntosTuristicos">
+          Puntos Turisticos
+        </ion-item>
+        <!--<ion-item menu-close href="#/app/localisacao">
+          Localisaçao
+        </ion-item>-->
+        <ion-item menu-close href="#/app/restaurantes">
+          Restaurantes
+        </ion-item>
+        <ion-item menu-close href="#/app/bars">
+          Bares
+        </ion-item>
+        <ion-item menu-close href="#/app/clubs">
+          Baladas
+        </ion-item>
+        <ion-item menu-close href="#/app/mesagems">
+          Mensagens
+        </ion-item>
+        <ion-item menu-close href="#/app/agendamento">
+          Agendamento
+        </ion-item>
+        <ion-item menu-close href="#/app/transport">
+          Transportes
+        </ion-item>
+        <div class="item item-divider">
+          Mais
+        </div>
+        <ion-item menu-close href="#/app/parametros">
+          Parametros
+        </ion-item>
+        <ion-item menu-close href="#/app/ajuda">
+          Ajuda
+        </ion-item>
+        <!--<ion-item menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>-->
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,58 @@
+<ion-view view-title="Parametros">
+
+  <ion-nav-buttons side="right">
+      <button ui-sref="app.home" class="button button-icon icon ion-ios-home"></button>
+  </ion-nav-buttons>
+    
+  <ion-content ng-controller="Toogle">
+    <div class="row">
+      <div class="col col-25"></div>
+      <div class="col col-50">
+          <p text-align:"center">Aqui voce pode eligir os itmes da pagina home</p>
+      </div>
+      <div class="col col-25"></div>
+    </div>
+    <ul class="list" >
+      <ion-toggle toggle-class="toggle-positive"
+                        ng-model="toogleModel.olympicos" 
+                        ng-checked="toogleModel.olympicos">
+              Olimpiadas
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-positive"
+                        ng-model="toogleModel.puntosTuristicos" 
+                        ng-checked="toogleModel.puntosTuristicos">
+              Puntos Turisticos
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-balanced"
+                        ng-model="toogleModel.restaurantes" 
+                        ng-checked="toogleModel.restaurantes">
+              Restaurantes
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-balanced"
+                        ng-model="toogleModel.bars" 
+                        ng-checked="toogleModel.bars">
+              Bares
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-balanced"
+                        ng-model="toogleModel.clubs" 
+                        ng-checked="toogleModel.clubs">
+              Baladas
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-energized"
+                        ng-model="toogleModel.mesagems" 
+                        ng-checked="toogleModel.mesagems">
+              Mensagens
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-energized"
+                        ng-model="toogleModel.agendamento" 
+                        ng-checked="toogleModel.agendamento">
+              Agendamento
+      </ion-toggle>
+      <ion-toggle toggle-class="toggle-energized"
+                        ng-model="toogleModel.transport" 
+                        ng-checked="toogleModel.transport">
+              Transportes
+      </ion-toggle>
+    </ul>
+  </ion-content>
+</ion-view>
