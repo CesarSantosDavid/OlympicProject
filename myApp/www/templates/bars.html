@@ -1,16 +1,16 @@
-<ion-view view-title="Bars" ng-controller="MapController" ng-init="init()">
+<ion-view view-title="Bares" ng-controller="MapControllerBares" ng-init="init()">
 
 	<ion-nav-buttons side="left">
 	    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
 	  </ion-nav-buttons>
 
 	  <ion-nav-buttons side="right">
-	    <button ng-controller="MapController" ng-click="centerOnMe()" class="button button-icon icon ion-pinpoint"></button>
+	    <button ng-controller="MapControllerBares" ng-click="centerOnMe()" class="button button-icon icon ion-pinpoint"></button>
 	  </ion-nav-buttons>
 
 
-	<ion-content >
-	    <div scroll="false" ng-controller="MapController" id="map" data-tap-disabled="true"></div>
+	<ion-content class="backSide">
+	    <div scroll="false" ng-controller="MapControllerBares" id="map" data-tap-disabled="true"></div>
 	</ion-content>
 	  
 </ion-view>

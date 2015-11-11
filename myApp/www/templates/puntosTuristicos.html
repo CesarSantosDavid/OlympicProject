@@ -1,16 +1,16 @@
-<ion-view view-title="Puntos Turisticos">
+<ion-view view-title="Puntos Turisticos" ng-controller="MapControllerPuntosTuristicos" ng-init="init()">
 
 	<ion-nav-buttons side="left">
 	    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
 	  </ion-nav-buttons>
 
 	  <ion-nav-buttons side="right">
-	    <button ng-controller="MapController" ng-click="locate();" class="button button-icon icon ion-pinpoint"></button>
+	    <button ng-controller="MapControllerPuntosTuristicos" ng-click="centerOnMe()" class="button button-icon icon ion-pinpoint"></button>
 	  </ion-nav-buttons>
 
 
-	<ion-content >
-	    <div ng-controller="MapController" id="map" data-tap-disabled="true"></div>
+	<ion-content class="backSide">
+	    <div scroll="false" ng-controller="MapControllerPuntosTuristicos" id="map" data-tap-disabled="true"></div>
 	</ion-content>
 	  
 </ion-view>

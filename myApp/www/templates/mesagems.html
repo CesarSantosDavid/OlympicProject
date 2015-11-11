@@ -1,4 +1,4 @@
-<ion-view view-title="Mesagems" ng-controller="emailsCtrl">
+<ion-view view-title="Mensagens" ng-controller="emailsCtrl">
 
 	<ion-nav-buttons side="left">
 	    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
@@ -10,18 +10,18 @@
          </button>
 	  </ion-nav-buttons>
 	  
-  <ion-content>
-      <ion-list show-delete="data.showDelete">
+  <ion-content class="backSide">
+      <ion-list show-delete="data.showDelete" >
         
         <ion-item ng-repeat="email in emails"
-                  class="item-icon-left item-remove-animate">
+                  class="item-icon-left item-remove-animate messagem-style">
           <i class="icon ion-ios-email-outline"></i>
           <h2>{{email.from}}</h2>
           <p>
-            <span class="email-text">
+            <span class="email-sujet">
               {{email.subject}}
             </span>
-            <span class="item-note email-text">
+            <span class="item-note email-date">
               {{email.date | date:'EEE M/d/yyyy h:mm a'}}
             </span>         
           </p>

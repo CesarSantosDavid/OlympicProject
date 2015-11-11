@@ -1,14 +1,14 @@
-<ion-view view-title="Clubs">
+<ion-view view-title="Baladas" ng-controller="MapControllerClubs" ng-init="init()">
 
 	<ion-nav-buttons side="left">
 	    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
 	  </ion-nav-buttons>
 
 	  <ion-nav-buttons side="right">
-	    <button ng-click="locate();" class="button button-icon icon ion-pinpoint"></button>
+	    <button ng-click="centerOnMe()" class="button button-icon icon ion-pinpoint"></button>
 	  </ion-nav-buttons>
 	  
-  <ion-content>
-    <h1>Clubs</h1>
-  </ion-content>
+  	<ion-content class="backSide">
+	    <div scroll="false" id="map" data-ng-controller="MapControllerClubs" data-tap-disabled="true"></div>
+	</ion-content>
 </ion-view>
